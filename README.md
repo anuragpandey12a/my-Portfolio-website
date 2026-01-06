@@ -1,26 +1,11 @@
 # Personal Portfolio Website
 
-This is my personal portfolio website built to showcase my skills, projects and contact information as a frontend web developer.
+A responsive personal portfolio website built using HTML, CSS and JavaScript.
 
-## 🚀 Features
-- Clean and modern user interface
-- Responsive design for mobile and desktop
+## Features
 - About, Skills, Projects and Contact sections
-- Simple and professional layout
+- Clean UI
+- Responsive layout
 
-## 🛠 Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-
-## 📂 Project Purpose
-This project was created to practice frontend web development fundamentals and to present my work professionally on GitHub and LinkedIn.
-
-## 👨‍💻 Author
-**Anurag Pandey**  
-Frontend Web Developer (Fresher)
-
-## 🔗 Live Demo
-https://anuragpandey12a.github.io/my-Portfolio-website/
-
-
+## Tech Stack
+HTML, CSS, JavaScrip

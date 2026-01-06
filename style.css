@@ -1,58 +1,96 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+:root{
+--bg:#0e1026;
+--text:#fff;
+--card:rgba(255,255,255,.12);
+--accent:#7c7cff;
 }
 
-header {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 30px;
+.light{
+--bg:#f5f7ff;
+--text:#111;
+--card:rgba(0,0,0,.1);
+--accent:#5a5aff;
 }
 
-nav {
-  background: #1f2937;
-  padding: 10px;
-  text-align: center;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+
+body{
+background:linear-gradient(135deg,#1b1f3b,#2a2f6b);
+color:var(--text);
 }
 
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
+html{scroll-behavior:smooth}
+
+/* NAV */
+.navbar{
+position:fixed;top:0;width:100%;
+display:flex;justify-content:space-between;
+padding:15px 40px;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+.navbar a{color:var(--text);margin:0 10px;text-decoration:none}
+
+/* HERO */
+.hero{
+min-height:100vh;
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+text-align:center;padding:120px 20px;
+}
+.hero h1{font-size:3rem}
+
+/* BUTTONS */
+.btn{
+padding:12px 28px;
+background:var(--accent);
+border-radius:30px;
+color:#fff;text-decoration:none;
+margin:8px;display:inline-block
+}
+.outline{background:transparent;border:2px solid var(--accent)}
+
+/* SECTION */
+.section{
+max-width:1000px;margin:auto;
+padding:90px 20px;text-align:center
 }
 
-section {
-  background: white;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 8px;
+/* SKILLS */
+.skill span{display:block;margin-top:15px}
+.bar{background:#333;border-radius:20px;overflow:hidden}
+.bar div{height:10px;background:var(--accent)}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px
+}
+.card{
+background:var(--card);
+padding:25px;border-radius:16px;
+transition:.3s
+}
+.card:hover{transform:translateY(-8px)}
+
+/* FORM */
+.contact-form{
+display:flex;flex-direction:column;
+max-width:400px;margin:20px auto
+}
+.contact-form input,
+.contact-form textarea{
+padding:12px;margin:10px 0;
+border:none;border-radius:10px
 }
 
-ul li {
-  margin: 5px 0;
-}
+/* FOOTER */
+footer{text-align:center;padding:30px;opacity:.7}
 
-input {
-  display: block;
-  margin: 10px 0;
-  padding: 8px;
-  width: 100%;
-}
+/* ANIMATION */
+.reveal{opacity:0;transform:translateY(40px);transition:.8s}
+.reveal.show{opacity:1;transform:translateY(0)}
 
-button {
-  padding: 10px;
-  background: #2563eb;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
 
-footer {
-  background: #111827;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
